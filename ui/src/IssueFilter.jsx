@@ -14,7 +14,7 @@ class IssueFilter extends React.Component {
         };
 
         this.onChangeStatus = this.onChangeStatus.bind(this);
-        this.applyFitler = this.applyFitler.bind(this);
+        this.applyFilter = this.applyFilter.bind(this);
         this.showOriginalFilter = this.showOriginalFilter.bind(this);
     }
 
@@ -63,7 +63,7 @@ class IssueFilter extends React.Component {
                     <option value="Closed">Closed</option>
                 </select>
                 {' '}
-                <button type="button" onClick={this.applyFitler}>Apply</button>
+                <button type="button" onClick={this.applyFilter}>Apply</button>
                 <button type="button" onClick={this.showOriginalFilter} disabled={!changed}>
                     Reset
                 </button>
